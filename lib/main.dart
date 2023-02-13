@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 return null;
               },
               onSaved: (input) => _email = input!,
-              decoration: InputDecoration(labelText: 'Email'),
+              decoration: InputDecoration(labelText: 'Email :'),
             ),
             TextFormField(
               validator: (input) {
