@@ -65,8 +65,8 @@ class _LoginScreenState extends State<LoginScreen> {
               onPressed: _submit,
               child: Text('Submit'),
               style: ElevatedButton.styleFrom(
-                primary: Colors.grey,
-              )
+                backgroundColor: Colors.grey,
+                )
             ),
           ],
         ),
@@ -89,32 +89,27 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.grey,
-        title: Text('Second Screen')
-
-      ),
+      appBar: AppBar(backgroundColor: Colors.grey, title: Text('Home Screen')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/red');
-              },
-              child: Text('Red Screen'),
-              style: ElevatedButton.styleFrom(
-                primary: Colors.red,
-              )
-            ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/red');
+                },
+                child: Text('Red Screen'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                )),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/green');
               },
               child: Text('Green Screen'),
               style: ElevatedButton.styleFrom(
-                primary: Colors.green,
-              )
+                backgroundColor: Colors.green,
+                )
             ),
           ],
         ),
@@ -140,9 +135,8 @@ class RedScreen extends StatelessWidget {
           },
           child: Text('Go Back'),
           style: ElevatedButton.styleFrom(
-            primary: Colors.red,
-          )
-        ),
+              backgroundColor: Colors.red,
+            )),
       ),
     );
   }
@@ -166,9 +160,8 @@ class GreenScreen extends StatelessWidget {
           },
           child: Text('Go Back'),
           style: ElevatedButton.styleFrom(
-            primary: Colors.green,
-          )
-        ),
+              backgroundColor: Colors.green,
+            )),
       ),
     );
   }
